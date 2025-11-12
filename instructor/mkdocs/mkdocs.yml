@@ -6,6 +6,7 @@ copyright: 2025 Cloudera Inc. All rights reserved.<br><a href="https://www.cloud
 
 theme:
     name: material
+    custom_dir: overrides
     logo: assets/images/logo-cloudera-white.svg
     favicon: assets/images/favicon.ico
     palette:
@@ -66,6 +67,10 @@ markdown_extensions:
 
 extra:
     generator: false  # Remove "Made with Material for MkDocs"
+    analytics:
+       provider: custom
+       umami_script_src: https://metrics.cloudera-labs.com/script.js
+       umami_website_id: 621c01ed-d361-4638-81c8-6066ea2ea56b
 
 plugins:
   - same-dir # to allow site_dir to be within docs_dir
