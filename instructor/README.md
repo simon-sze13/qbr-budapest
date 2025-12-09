@@ -56,3 +56,14 @@ The action is triggered on a push to the `main` branch. The action can also be l
    ```
 
 * The lab guide should now be live on your GitHub Pages site. The URL for the site can be found via the `Settings -> Pages` menu of the repository, or go to https://github.infra.cloudera.com/pages/GOES/<REPOSITORY_NAME>/
+
+## Ansible Execution Environment
+
+`hatch` has two scripts for building and publishing the _Execution Environment_: `build` and `push`.  `build` will remove any existing Podman manifest and then build multi-architecture images into a new manifest.  `push` will publish the manifest to the upstream Docker registry with the current version, i.e. `hatch version`, and update the `latest` tag.
+
+```bash
+hatch run build;
+hatch run push;
+```
+
+A GitHub Actions workflow (`.github/workflows/build_and_push_ee_image.yml`) automates the multi-architecture execution environment image build and push process. The workflow triggers automatically on pushes to `main` or can be run manually from the GitHub repo.
