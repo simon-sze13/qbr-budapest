@@ -10,7 +10,7 @@ _Any details on how to setup HoL environment_
 
 Two methods are available to publish this automation lab guide to GitHub pages - a GitHub Action (recommended) and manually publishing.
 
-> [!NOTE]  
+> [!NOTE]
 > Follow the manual steps to test your guide locally (via the `mkdocs serve` command).
 
 ### Using GitHub Action

@@ -5,18 +5,18 @@ _Brief summary of the Hands on Lab_
 
 > **What's inside?**
 >
-> - A fully generated MkDocs website for step‑by‑step guidance.
-> - Raw markdown sources for easy editing or reuse.  
+> - A fully generated MkDocs website for step-by-step guidance.
+> - Raw markdown sources for easy editing or reuse.
 > - Instructor notes for deploying the workshop and publishing the workshop guide for participants.
 >
 
-## 🔗 Quick Links
+## :paperclip: Quick Links
 
 | Resource | Description |
 |----------|-------------|
-| **🌐 View the Lab Guide** | **[Live MkDocs Site](https://github.infra.cloudera.com/pages/GOES/<REPOSITORY_NAME>/)**<br/>Browse the rendered lab guide. |
-| **📋 Instructor Guide** | **[Instructor README](./instructor/README.md)**<br/>Setup tips, lab objectives, and facilitation notes. |
-| **🗂️ Raw Lab Content** | **[Markdown Sources](./content/)**<br/>The `.md` files used to generate the site—fork, tweak, or extend! |
+| **:globe_with_meridians: View the Lab Guide** | **[Live MkDocs Site](https://github.infra.cloudera.com/pages/GOES/<REPOSITORY_NAME>/)**<br/>Browse the rendered lab guide. |
+| **:clipboard: Instructor Guide** | **[Instructor README](./instructor/README.md)**<br/>Setup tips, lab objectives, and facilitation notes. |
+| **:notebook_with_decorative_cover: Raw Lab Content** | **[Markdown Sources](./content/)**<br/>The `.md` files used to generate the site--fork, tweak, or extend! |
 
 ## Contributing
 

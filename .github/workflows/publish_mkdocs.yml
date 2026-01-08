@@ -1,4 +1,4 @@
-name: Publish MKDocs 
+name: Publish MkDocs
 on:
   workflow_dispatch:
   push:
@@ -33,7 +33,7 @@ jobs:
         run: sudo pip3 install -r requirements.txt
         working-directory: instructor/mkdocs/
 
-      - name: Deploy MKDocs to GH Pages
-        run: | 
+      - name: Deploy MkDocs to Github Pages
+        run: |
           mkdocs gh-deploy --force
         working-directory: instructor/mkdocs/
