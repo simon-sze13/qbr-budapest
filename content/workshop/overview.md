@@ -13,12 +13,15 @@
 | **Governance** | Projects, roles, and policies align with enterprise security expectations. |
 | **Data & AI adjacency** | Fits next to Cloudera data platform stories—same buyer, complementary footprint. |
 
-## Map to the labs
+## Map to the labs (Exposing applications)
 
-1. **Environment** — Show how users land in a governed project context.
-2. **Deploy** — Show the “happy path” for an application or catalog item your QBR emphasizes.
-3. **Validate** — Show **observability, policy, or cost** differentiators your SE team selected for the event.
-4. **Wrap-up** — Capture customer questions and point to [full documentation](https://docs.taikun.cloud/).
+Aligned with [Exposing applications](https://docs.taikun.cloud/CloudWorks/Exposing_Applications/Exposing_Applications/) in product documentation:
+
+1. **Environment & project** — Governed project and cluster context before any exposure.
+2. **01–02** — **Internal DNS** then **LoadBalancer** as the first external path.
+3. **03–05** — **Ingress** stack: basics, **Managed Apps**, **CertManager** for HTTPS.
+4. **06 — Taikun Link** — Fast, secure URL without heavy DNS/TLS setup.
+5. **Wrap-up** — Talk tracks and [full documentation](https://docs.taikun.cloud/).
 
 !!! tip "Customize this page"
     Replace generic bullets with **named customer outcomes** (for example FinServ, manufacturing, telco) before your QBR dry run.

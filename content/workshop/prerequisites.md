@@ -24,6 +24,8 @@ When your environment is ready, you should be able to:
 
 1. Sign in to the **Cloud Factory** UI (URL provided in session).
 2. See the **project** assigned for the workshop.
-3. Open **Lab 1** and complete the first checklist item.
+3. Open [Environment & project](../labs/environment-setup.md) and complete the checklist.
 
-[Continue to Lab 1 — Environment setup](../labs/lab-01-environment.md){ .md-button .md-button--primary }
+[Continue to Environment & project](../labs/environment-setup.md){ .md-button .md-button--primary }
+
+[Exposing applications — lab overview](../labs/exposing-applications/index.md){ .md-button }

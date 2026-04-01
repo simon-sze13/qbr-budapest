@@ -39,13 +39,20 @@ nav:
         - Prerequisites: workshop/prerequisites.md
         - Cloud Factory overview: workshop/overview.md
     - Labs:
-        - "1. Environment setup": labs/lab-01-environment.md
-        - "2. Deploy workload": labs/lab-02-deploy.md
-        - "3. Validate & observe": labs/lab-03-validate.md
-        - "4. Wrap-up": labs/lab-04-wrap-up.md
+        - Environment & project: labs/environment-setup.md
+        - Exposing applications:
+            - Overview: labs/exposing-applications/index.md
+            - "01 · Kubernetes DNS — basics": labs/exposing-applications/01-kubernetes-dns-basics.md
+            - "02 · LoadBalancer": labs/exposing-applications/02-loadbalancer.md
+            - "03 · Taikun Ingress — basics": labs/exposing-applications/03-taikun-ingress-basics.md
+            - "04 · Taikun Ingress — Managed Apps": labs/exposing-applications/04-taikun-ingress-managed-apps.md
+            - "05 · Taikun Ingress — CertManager": labs/exposing-applications/05-taikun-ingress-certmanager.md
+            - "06 · Taikun Link": labs/exposing-applications/06-taikun-link.md
+        - Workshop wrap-up: labs/workshop-wrap-up.md
     - Reference:
         - Glossary: reference/glossary.md
         - Troubleshooting: reference/troubleshooting.md
+        - Exposing applications (product): https://docs.taikun.cloud/CloudWorks/Exposing_Applications/Exposing_Applications/
         - Product documentation: https://docs.taikun.cloud/
 
 markdown_extensions:

@@ -4,7 +4,7 @@ hide:
 ---
 # Cloudera Cloud Factory — QBR workshop
 
-Welcome to the **QBR hands-on workshop** for **Cloudera Cloud Factory**. This guide walks you through a focused demo: environment readiness, deployment, validation, and wrap-up—aligned with how we tell the Cloud Factory story to executives and technical leaders.
+Welcome to the **QBR hands-on workshop** for **Cloudera Cloud Factory**. The lab track mirrors **[Exposing applications](https://docs.taikun.cloud/CloudWorks/Exposing_Applications/Exposing_Applications/)** in the product docs: **Kubernetes DNS**, **LoadBalancer**, **Taikun Ingress** (including Managed Apps and **CertManager**), and **Taikun Link**—plus environment setup and wrap-up.
 
 <div class="qbr-grid" markdown="1">
 
@@ -35,6 +35,16 @@ Prerequisites and the first hands-on steps.
 Short narrative for QBR: what Cloud Factory is and why it matters.
 
 [Overview](workshop/overview.md){ .md-button }
+
+</div>
+
+<div class="qbr-card" markdown="1">
+
+## Exposing applications (labs)
+
+Same module path as the product doc: DNS through Taikun Link.
+
+[Lab overview](labs/exposing-applications/index.md){ .md-button }
 
 </div>
 
@@ -75,7 +85,7 @@ Full product documentation and glossary (external).
     A platform for deploying and operating Kubernetes-centric workloads across public and private clouds from a unified control plane—so teams spend less time on undifferentiated plumbing and more on applications and data services.
 
 ??? question "What will I do in this workshop?"
-    You will follow four short modules: prepare your environment, perform a representative deploy, validate observability or policy outcomes (as scripted for QBR), and capture talking points for customer conversations.
+    You will complete **environment setup**, then six **Exposing applications** modules (**01** Kubernetes DNS through **06** Taikun Link) in the same order as [the official guide](https://docs.taikun.cloud/CloudWorks/Exposing_Applications/Exposing_Applications/)—with facilitator demos plus links to full procedures on docs.taikun.cloud.
 
 ??? question "Where is the full product documentation?"
     Public documentation lives at **[docs.taikun.cloud](https://docs.taikun.cloud/)**. This workshop site is a **narrow QBR slice** with original lab steps; use Taikun docs for depth on features, cloud providers, and operations.
