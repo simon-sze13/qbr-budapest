@@ -35,27 +35,6 @@ lint = [
   "pre-commit run -a",
   "ansible-lint --fix",
 ]
-build = [
-  """
-cd instructor/public-cloud
-ansible-builder create
-podman manifest rm docker-sandbox.infra.cloudera.com/goes/<YOUR_REPO_NAME>:$(hatch version) || true
-podman manifest create docker-sandbox.infra.cloudera.com/goes/<YOUR_REPO_NAME>:$(hatch version)
-podman build \
-  --no-cache \
-  --platform linux/amd64,linux/arm64 \
-  --manifest docker-sandbox.infra.cloudera.com/goes/<YOUR_REPO_NAME>:$(hatch version) \
-  context
-echo "Local Manifest: docker-sandbox.infra.cloudera.com/goes/<YOUR_REPO_NAME>:$(hatch version)"
-  """
-]
-push = [
-  """
-podman manifest push docker-sandbox.infra.cloudera.com/goes/<YOUR_REPO_NAME>:$(hatch version) docker-sandbox.infra.cloudera.com/goes/<YOUR_REPO_NAME>:$(hatch version)
-podman manifest push docker-sandbox.infra.cloudera.com/goes/<YOUR_REPO_NAME>:$(hatch version) docker-sandbox.infra.cloudera.com/goes/<YOUR_REPO_NAME>:latest --rm
-echo "Pushed Image Manifest: docker-sandbox.infra.cloudera.com/goes/<YOUR_REPO_NAME>:[$(hatch version)|latest]"
-  """
-]
 
 [tool.hatch.envs.mkdocs]
 python = "3.12"
