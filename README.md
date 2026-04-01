@@ -1,5 +1,10 @@
 # QBR — Cloudera Cloud Factory Workshop (MkDocs)
 
+> **Participant site (styled workshop — open this in the browser):**  
+> **[https://simon-sze13.github.io/qbr-budapest/](https://simon-sze13.github.io/qbr-budapest/)**
+>
+> This file is only the **GitHub repository README**. The repo page at [github.com/simon-sze13/qbr-budapest](https://github.com/simon-sze13/qbr-budapest) will always show this README below the file list — that is **not** the workshop website.
+
 Public workshop guide for **QBR** demos of **Cloudera Cloud Factory**: agenda, prerequisites, hands-on lab modules, and links to full product documentation at [docs.taikun.cloud](https://docs.taikun.cloud/).
 
 ## What is inside
