@@ -1,7 +1,7 @@
 [project]
-name = "<YOUR_REPO_NAME>"
+name = "qbr-cloud-factory-workshop"
 dynamic = ["version"]
-description = 'HOL-0XX <REPO DESCRIPTION>'
+description = "QBR Cloudera Cloud Factory workshop — MkDocs lab guide"
 readme = "README.md"
 requires-python = ">=3.8"
 license = "Apache-2.0"

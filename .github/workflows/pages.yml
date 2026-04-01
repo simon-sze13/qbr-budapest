@@ -1,0 +1,50 @@
+name: Deploy MkDocs to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Install MkDocs dependencies
+        run: pip install -r instructor/mkdocs/requirements-ci.txt
+
+      - name: Build documentation
+        working-directory: instructor/mkdocs
+        env:
+          DISABLE_MKDOCS_2_WARNING: "true"
+          # Quieter logs on runners that still print Material / MkDocs notices
+          PIP_DISABLE_PIP_VERSION_CHECK: "1"
+        run: mkdocs build --strict
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: instructor/mkdocs/build
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

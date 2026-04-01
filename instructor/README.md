@@ -1,80 +1,34 @@
-# Instructor Guide for ENTER_HoL_NAME
+# Instructor guide — QBR Cloudera Cloud Factory workshop
 
-This guide provides detailed instructions on setting up the workshop environment, preparing virtual machines with the necessary prerequisites, and publishing the workshop guide for participants.
+This guide covers local builds and publishing the participant-facing MkDocs site. Workshop **content** lives under [`../content/`](../content/); **configuration** lives in [`mkdocs/mkdocs.yml`](mkdocs/mkdocs.yml).
 
-> [!IMPORTANT]
-> **POC or Workshop Environment Request**
->
-> If the sales cycle requires a Cloudera-paid POC or Workshop, this needs VP approval and must be done in a separate CDP tenant and cloud account.
-> 
-> **Action Required:** Raise a JIRA using the [Workshop Request Template](https://cloudera.atlassian.net/jira/software/c/projects/CDPAR/form/467). All fields in the description are required. Any missing information will delay the process.
->
-> **POC Duration:** The duration of the POC should be two weeks or less. Please give ample advance notice to accommodate tenant rotation scheduling.
->
-> For complete details on requirements, responsibilities, and processes, see the [CDP Tenants for POCs/HOLs/Workshops Wiki](https://cloudera.atlassian.net/wiki/spaces/SE/pages/1542750294/CDP+Tenants+for+Cloudera+Paid+POCs+HOLs+and+Workshops).
+> [!TIP]
+> **Workshop or POC environments** are arranged through your Cloudera account team or facilitator. Follow your internal process for tenant access, approvals, and duration—this public guide only documents the MkDocs site.
 
-## Hands on Lab Environment Setup
+## Hands-on lab environment setup
 
-_Any details on how to setup HoL environment_
+Document tenant URLs, roles, and reset steps **in your private runbook** or facilitator notes; avoid putting internal hostnames or credentials in this repository.
 
-## Publishing the Workshop Guide to GitHub Pages
+## Publishing to GitHub Pages (public github.com)
 
-Two methods are available to publish this automation lab guide to GitHub pages - a GitHub Action (recommended) and manually publishing.
+The workflow [`.github/workflows/pages.yml`](../.github/workflows/pages.yml) runs on pushes to `main`. It installs [`mkdocs/requirements-ci.txt`](mkdocs/requirements-ci.txt), runs `mkdocs build --strict` from `instructor/mkdocs`, and deploys `build/` to **GitHub Pages**.
 
-> [!NOTE]
-> Follow the manual steps to test your guide locally (via the `mkdocs serve` command).
+1. Repo **Settings → Pages → Source**: **GitHub Actions**.
+2. Match **`site_url`** in `mkdocs.yml` to `https://<owner>.github.io/<repo>/`.
 
-### Using GitHub Action
-
-The [publish_mkdocs.yml](../.github/workflows/publish_mkdocs.yml) GitHub action is used to automatically publish the the lab guide to GitHub pages.
-
-The action is triggered on a push to the `main` branch. The action can also be launched manually if required.
-
-### Steps to manually publish the guide
-
-* Create a Python Virtual Environment
-
-   ```bash
-   python3 -m venv ~/mkdocs_venv
-   source ~/mkdocs_venv/bin/activate
-   ```
-
-* Clone the <REPOSITORY_NAME> GitHub repository
-
-  ```bash
-  git clone https://github.infra.cloudera.com/GOES/<REPOSITORY_NAME>.git
-  ```
-
-* Install Required Dependencies for MkDocs
-
-   ```bash
-   cd <REPOSITORY_NAME>/instructor/mkdocs
-   pip install -r requirements.txt
-   ```
-
-* Run the following command to test your guide locally:
-
-   ```bash
-   mkdocs serve
-   ```
-
-   Open `http://127.0.0.1:8000` in your browser to view the guide.
-
-* Use the following command to publish the guide to the `origin` repository's GitHub Pages:
-
-   ```bash
-   mkdocs gh-deploy -r origin --no-history
-   ```
-
-* The lab guide should now be live on your GitHub Pages site. The URL for the site can be found via the `Settings -> Pages` menu of the repository, or go to https://github.infra.cloudera.com/pages/GOES/<REPOSITORY_NAME>/
-
-## Ansible Execution Environment
-
-`hatch` has two scripts for building and publishing the _Execution Environment_: `build` and `push`.  `build` will remove any existing Podman manifest and then build multi-architecture images into a new manifest.  `push` will publish the manifest to the upstream Docker registry with the current version, i.e. `hatch version`, and update the `latest` tag.
+Optional CLI deploy:
 
 ```bash
-hatch run build;
-hatch run push;
+cd instructor/mkdocs && pip install -r requirements.txt && mkdocs gh-deploy --force
 ```
 
-A GitHub Actions workflow (`.github/workflows/build_and_push_ee_image.yml`) automates the multi-architecture execution environment image build and push process. The workflow triggers automatically on pushes to `main` or can be run manually from the GitHub repo.
+## Local preview
+
+```bash
+cd instructor/mkdocs
+python3 -m venv .venv && source .venv/bin/activate
+pip install -r requirements.txt
+mkdocs serve
+```
+
+Open `http://127.0.0.1:8000`.

@@ -1,4 +1,11 @@
 instructor/mkdocs/build/*
+instructor/mkdocs/.venv/
+.venv/
+**/.venv/
+
+# Python
+__pycache__/
+*.pyc
 # Definition artifacts
 **/.kubeconfig
 **/deployment_info.yml

@@ -1,56 +1,87 @@
 :root > * {
+  /* Cloudera orange + white (light workshop theme) */
+  --md-primary-fg-color: #f96702;
+  --md-primary-fg-color--light: #ff944d;
+  --md-primary-fg-color--dark: #c65302;
+  --md-primary-bg-color: #ffffff;
+  --md-primary-bg-color--light: #f8f9fa;
+  --md-text-link-color: #c65302;
 
-  /* Primary color shades */
-  --md-primary-fg-color: #ff550D; /* Cloudera Orange  */
-  --md-primary-fg-color--light: #ff8856; /* Lighter Cloudera Orange */
-  --md-primary-fg-color--dark: #305868;
-  --md-primary-bg-color: #FFFFFF;
-  --md-primary-bg-color--light: #F3F5F7;
-  --md-text-link-color: #5555F9; /* Blue Nova  */
+  --md-accent-fg-color: #f96702;
+  --md-accent-fg-color--transparent: hsla(24, 98%, 49%, 0.12);
+  --md-accent-bg-color: #ffffff;
+  --md-accent-bg-color--light: #f3f5f7;
 
-  /* Accent color shades */
-  --md-accent-fg-color: #5555F9; /* Blue Nova  */
-  --md-accent-fg-color--transparent: hsla(189, 100%, 37%, 0.1);
-  --md-accent-bg-color: #FFFFFF;
-  --md-accent-bg-color--light: #F3F5F7;
+  --md-footer-bg-color: #f96702;
+  --md-footer-bg-color--dark: #c65302;
+  --md-footer-fg-color: #ffffff;
+  --md-footer-fg-color--light: #fff5eb;
+  --md-footer-fg-color--lighter: hsla(0, 0%, 100%, 0.65);
+}
 
-  /* Footer */
-  --md-footer-bg-color: #5555F9; /* Blue Nova  */
-  --md-footer-bg-color--dark: #120046; /* Twilight */
-  --md-footer-fg-color: #CDDBE4;
-  --md-footer-fg-color--light: #F3F5F7;
-  --md-footer-fg-color--lighter: hsla(0, 0%, 100%, 0.3);
-  }
+.md-header {
+  background-color: var(--md-primary-fg-color);
+}
 
-/* Footer copyright links */
+[data-md-color-scheme="default"] .md-tabs {
+  background-color: var(--md-primary-fg-color--dark);
+}
+
 .md-copyright__highlight a {
-  color: #5555F9 !important; /* Blue Nova */
+  color: var(--md-footer-fg-color--light) !important;
   text-decoration: underline;
-  transition: opacity 0.3s ease-in-out;
 }
 
 .md-copyright__highlight a:hover {
-  opacity: 0.8;
+  opacity: 0.9;
 }
 
-/* Reduce top margin for main content */
 .md-main__inner {
   margin-top: 0.5rem;
 }
 
-/* Card Grid for 001-automation-bootcamp */
-.md-typeset #sko .grid {
-    grid-gap: .4rem;
-    display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(min(100%,20rem),1fr));
-    margin: 1em 0;
+/* Landing card grid (Taikun-style entry points) */
+.md-typeset .qbr-grid {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 16rem), 1fr));
+  margin: 1.5rem 0;
+}
+
+.md-typeset .qbr-card {
+  display: block;
+  padding: 1.25rem 1.25rem 1rem;
+  border: 0.05rem solid var(--md-default-fg-color--lightest);
+  border-radius: 0.2rem;
+  background: var(--md-default-bg-color);
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.md-typeset .qbr-card:hover {
+  border-color: var(--md-primary-fg-color);
+  box-shadow: 0 0.2rem 0.5rem hsla(24, 98%, 49%, 0.12);
+}
+
+.md-typeset .qbr-card h2 {
+  margin-top: 0;
+  font-size: 1.05rem;
+  color: var(--md-primary-fg-color);
+}
+
+.md-typeset .qbr-card p {
+  margin-bottom: 0.75rem;
+  font-size: 0.9rem;
+}
+
+.md-typeset .qbr-card .md-button {
+  margin-top: 0.25rem;
 }
 
 .md-typeset .prereq-complete {
   text-align: center;
   font-size: 1.1rem;
-  border: .05rem solid var(--md-default-fg-color--lightest);
-  border-radius: .1rem;
+  border: 0.05rem solid var(--md-default-fg-color--lightest);
+  border-radius: 0.1rem;
 }
 
 .md-typeset .prereq-complete a {
@@ -60,42 +91,37 @@
   border-radius: 5px;
   transition: background 0.3s ease-in-out;
 }
+
 .md-typeset .prereq-complete h2 {
   margin: 0.6em;
 }
 
-/* Username input  */
-[data-md-color-scheme="slate"] .username-input-container {
-     background: #1f2020;
-     border-color: #404040;
-}
-
 .username-input-container input {
-    padding: 5px 10px;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-    flex-grow: 1; /* Input takes available space */
-    background-color: white;
-    color: black;
-    font-size: large;
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  flex-grow: 1;
+  background-color: white;
+  color: black;
+  font-size: large;
 }
 
 .username-input-container button {
-    padding: 6px 12px;
-    cursor: pointer;
-    background-color: var(--md-primary-fg-color--light, #4051b5); /* Use theme primary color if available */
-    color: white;
-    border: none;
-    border-radius: 3px;
-    font-weight: bold;
-    transition: background-color 0.2s;
+  padding: 6px 12px;
+  cursor: pointer;
+  background-color: var(--md-primary-fg-color--light);
+  color: white;
+  border: none;
+  border-radius: 3px;
+  font-weight: bold;
+  transition: background-color 0.2s;
 }
 
 .username-input-container button:hover {
-     background-color: var(--md-primary-fg-color, #303fa1);
+  background-color: var(--md-primary-fg-color);
 }
 
 .username-input-container button#user-username-clear {
-    background-color: #999;
-    font-size: 0.8em;
+  background-color: #888;
+  font-size: 0.8em;
 }
