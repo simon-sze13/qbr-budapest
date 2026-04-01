@@ -32,9 +32,13 @@ Open `http://127.0.0.1:8000`.
 ## Publish to GitHub Pages
 
 1. Push this project to [`simon-sze13/qbr-budapest`](https://github.com/simon-sze13/qbr-budapest) on the `main` branch.
-2. In the repo: **Settings → Pages → Build and deployment → Source**: select **GitHub Actions**.
-3. The **Deploy MkDocs to GitHub Pages** workflow runs on every push to `main`. The first run may require approving the `github-pages` environment.
-4. Canonical URLs are set in [`instructor/mkdocs/mkdocs.yml`](instructor/mkdocs/mkdocs.yml) (`site_url` must keep the trailing `/`).
+2. **Critical:** In the repo go to **Settings → Pages → Build and deployment**. Set **Source** to **GitHub Actions** (not “Deploy from a branch”). If Source is **main** / **/ (root)**, GitHub uses Jekyll and the site will look like a plain **README** instead of the MkDocs workshop.
+3. Open the **Actions** tab and confirm **Deploy MkDocs to GitHub Pages** completes (green). The first run may ask you to **approve** the `github-pages` environment under **Settings → Environments**.
+4. Canonical URLs are in [`instructor/mkdocs/mkdocs.yml`](instructor/mkdocs/mkdocs.yml) (`site_url` must keep the trailing `/`).
+
+### If you only see the README on github.io
+
+- Pages is almost certainly set to **Deploy from a branch**. Switch it to **GitHub Actions**, re-run the workflow (**Actions → workflow → Run workflow**), then wait a minute and hard-refresh the site.
 
 ## Branding
 

@@ -20,6 +20,9 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - uses: actions/configure-pages@v5
+        id: pages
+
       - uses: actions/setup-python@v5
         with:
           python-version: "3.x"
@@ -31,9 +34,11 @@ jobs:
         working-directory: instructor/mkdocs
         env:
           DISABLE_MKDOCS_2_WARNING: "true"
-          # Quieter logs on runners that still print Material / MkDocs notices
           PIP_DISABLE_PIP_VERSION_CHECK: "1"
         run: mkdocs build --strict
+
+      - name: Verify MkDocs output
+        run: test -f instructor/mkdocs/build/index.html && ls -la instructor/mkdocs/build | head -20
 
       - uses: actions/upload-pages-artifact@v3
         with:
@@ -42,6 +47,9 @@ jobs:
   deploy:
     needs: build
     runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
