@@ -1,5 +1,5 @@
 [project]
-name = "qbr-cloud-factory-workshop"
+name = "qbr-budapest"
 dynamic = ["version"]
 description = "QBR Cloudera Cloud Factory workshop — MkDocs lab guide"
 readme = "README.md"

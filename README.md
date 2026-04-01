@@ -13,15 +13,9 @@ Public workshop guide for **QBR** demos of **Cloudera Cloud Factory**: agenda, p
 
 ## View the published site
 
-After you enable GitHub Pages (see below), the site is served from:
+Live site (GitHub Pages): **[https://simon-sze13.github.io/qbr-budapest/](https://simon-sze13.github.io/qbr-budapest/)**
 
-`https://<your-github-user-or-org>.github.io/qbr-cloud-factory-workshop/`
-
-Replace placeholders in [`instructor/mkdocs/mkdocs.yml`](instructor/mkdocs/mkdocs.yml):
-
-- `site_url`
-- `repo_url`
-- `edit_uri` (optional)
+Source repository: **[github.com/simon-sze13/qbr-budapest](https://github.com/simon-sze13/qbr-budapest)**
 
 ## Run locally
 
@@ -37,11 +31,10 @@ Open `http://127.0.0.1:8000`.
 
 ## Publish to GitHub Pages
 
-1. Create a **public** repository on [github.com](https://github.com/new) (for example `qbr-cloud-factory-workshop`).
-2. Push this project to the `main` branch.
-3. In the repo: **Settings → Pages → Build and deployment → Source**: select **GitHub Actions**.
-4. The **Deploy MkDocs to GitHub Pages** workflow runs on every push to `main`. The first run may require approving the `github-pages` environment.
-5. Update `site_url` in `mkdocs.yml` to match the live URL (include trailing `/`), then push again.
+1. Push this project to [`simon-sze13/qbr-budapest`](https://github.com/simon-sze13/qbr-budapest) on the `main` branch.
+2. In the repo: **Settings → Pages → Build and deployment → Source**: select **GitHub Actions**.
+3. The **Deploy MkDocs to GitHub Pages** workflow runs on every push to `main`. The first run may require approving the `github-pages` environment.
+4. Canonical URLs are set in [`instructor/mkdocs/mkdocs.yml`](instructor/mkdocs/mkdocs.yml) (`site_url` must keep the trailing `/`).
 
 ## Branding
 

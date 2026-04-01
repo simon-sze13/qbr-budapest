@@ -14,7 +14,7 @@ Document tenant URLs, roles, and reset steps **in your private runbook** or faci
 The workflow [`.github/workflows/pages.yml`](../.github/workflows/pages.yml) runs on pushes to `main`. It installs [`mkdocs/requirements-ci.txt`](mkdocs/requirements-ci.txt), runs `mkdocs build --strict` from `instructor/mkdocs`, and deploys `build/` to **GitHub Pages**.
 
 1. Repo **Settings → Pages → Source**: **GitHub Actions**.
-2. Match **`site_url`** in `mkdocs.yml` to `https://<owner>.github.io/<repo>/`.
+2. **`site_url`** in `mkdocs.yml` is set to **https://simon-sze13.github.io/qbr-budapest/** (trailing slash required).
 
 Optional CLI deploy:
 

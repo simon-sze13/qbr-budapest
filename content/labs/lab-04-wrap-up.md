@@ -15,7 +15,7 @@
 
 - **Product documentation**: [docs.taikun.cloud](https://docs.taikun.cloud/)
 - **Glossary**: [Workshop glossary](../reference/glossary.md) and Taikun [Glossary](https://docs.taikun.cloud/Glossary/Glossary/) for full terminology
-- **Issues with this workshop site**: use your team’s **public GitHub repository** issue tracker (linked from the site header when `repo_url` is configured)
+- **Issues with this workshop site**: [github.com/simon-sze13/qbr-budapest/issues](https://github.com/simon-sze13/qbr-budapest/issues) (also linked from the site header)
 
 !!! success "Thank you"
     You completed the QBR workshop path. Customize these pages with screenshots and tenant-specific names **only** in private forks if they contain sensitive data.

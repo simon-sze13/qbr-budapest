@@ -1,10 +1,9 @@
 site_name: "QBR — Cloudera Cloud Factory Workshop"
 site_description: Hands-on workshop guide for the Cloudera Cloud Factory QBR demo.
 site_author: Cloudera
-# After first GitHub Pages deploy, set owner/repo (trailing slash required):
-site_url: https://YOUR_GITHUB_USER.github.io/qbr-cloud-factory-workshop/
+site_url: https://simon-sze13.github.io/qbr-budapest/
 copyright: Copyright &copy; 2026 Cloudera, Inc. All rights reserved.<br><a href="https://www.cloudera.com/legal/terms-and-conditions.html" target="_blank" rel="noopener">Terms &amp; Conditions</a> · <a href="https://www.cloudera.com/legal/policies.html" target="_blank" rel="noopener">Privacy Policy</a>
-repo_url: https://github.com/YOUR_GITHUB_USER/qbr-cloud-factory-workshop
+repo_url: https://github.com/simon-sze13/qbr-budapest
 repo_name: GitHub
 edit_uri: edit/main/content/
 

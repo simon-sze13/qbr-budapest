@@ -20,5 +20,5 @@
 ## This site looks broken after fork
 
 - Run `mkdocs serve` from `instructor/mkdocs` after installing `requirements.txt`.
-- Set **`site_url`** in `mkdocs.yml` to match your **GitHub Pages** URL (with trailing slash).
+- Set **`site_url`** in `mkdocs.yml` to match your **GitHub Pages** URL (with trailing slash). For this repo: `https://simon-sze13.github.io/qbr-budapest/`.
 - Ensure **GitHub Actions** completed successfully (**Settings → Pages**).
