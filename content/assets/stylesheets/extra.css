@@ -1,19 +1,19 @@
 :root > * {
-  /* Cloudera orange + white (light workshop theme) */
-  --md-primary-fg-color: #f96702;
-  --md-primary-fg-color--light: #ff944d;
-  --md-primary-fg-color--dark: #c65302;
+  /* Cloudera orange + white (light workshop theme) — primary #FF550D */
+  --md-primary-fg-color: #ff550d;
+  --md-primary-fg-color--light: #ff8a56;
+  --md-primary-fg-color--dark: #cc440a;
   --md-primary-bg-color: #ffffff;
   --md-primary-bg-color--light: #f8f9fa;
-  --md-text-link-color: #c65302;
+  --md-text-link-color: #cc440a;
 
-  --md-accent-fg-color: #f96702;
-  --md-accent-fg-color--transparent: hsla(24, 98%, 49%, 0.12);
+  --md-accent-fg-color: #ff550d;
+  --md-accent-fg-color--transparent: hsla(16, 100%, 53%, 0.12);
   --md-accent-bg-color: #ffffff;
   --md-accent-bg-color--light: #f3f5f7;
 
-  --md-footer-bg-color: #f96702;
-  --md-footer-bg-color--dark: #c65302;
+  --md-footer-bg-color: #ff550d;
+  --md-footer-bg-color--dark: #cc440a;
   --md-footer-fg-color: #ffffff;
   --md-footer-fg-color--light: #fff5eb;
   --md-footer-fg-color--lighter: hsla(0, 0%, 100%, 0.65);
@@ -59,7 +59,7 @@
 
 .md-typeset .qbr-card:hover {
   border-color: var(--md-primary-fg-color);
-  box-shadow: 0 0.2rem 0.5rem hsla(24, 98%, 49%, 0.12);
+  box-shadow: 0 0.2rem 0.5rem hsla(16, 100%, 53%, 0.12);
 }
 
 .md-typeset .qbr-card h2 {

@@ -48,7 +48,7 @@ If **github.io** shows only plain README-style text, Pages is still serving from
 
 ## Branding
 
-- **Cloudera orange** (`#f96702`) and white: [`content/assets/stylesheets/extra.css`](content/assets/stylesheets/extra.css)
+- **Cloudera orange** (`#FF550D`) and white: [`content/assets/stylesheets/extra.css`](content/assets/stylesheets/extra.css)
 - Logo: [`content/assets/images/logo-cloudera-white.svg`](content/assets/images/logo-cloudera-white.svg)
 
 ## Contributing & license
