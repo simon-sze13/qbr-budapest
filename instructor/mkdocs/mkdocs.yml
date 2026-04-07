@@ -34,10 +34,6 @@ use_directory_urls: true
 
 nav:
     - Home: README.md
-    - Workshop:
-        - Agenda: workshop/agenda.md
-        - Prerequisites: workshop/prerequisites.md
-        - Cloud Factory overview: workshop/overview.md
     - Labs:
         - Environment & project: labs/environment-setup.md
         - Exposing applications:
@@ -49,11 +45,6 @@ nav:
             - "05 · Taikun Ingress — CertManager": labs/exposing-applications/05-taikun-ingress-certmanager.md
             - "06 · Taikun Link": labs/exposing-applications/06-taikun-link.md
         - Workshop wrap-up: labs/workshop-wrap-up.md
-    - Reference:
-        - Glossary: reference/glossary.md
-        - Troubleshooting: reference/troubleshooting.md
-        - Exposing applications (product): https://docs.taikun.cloud/CloudWorks/Exposing_Applications/Exposing_Applications/
-        - Product documentation: https://docs.taikun.cloud/
 
 markdown_extensions:
   - admonition

@@ -4,45 +4,31 @@ hide:
 ---
 # Cloudera Cloud Factory — QBR workshop
 
-Welcome to the **QBR hands-on workshop** for **Cloudera Cloud Factory**. The lab track mirrors **[Exposing applications](https://docs.taikun.cloud/CloudWorks/Exposing_Applications/Exposing_Applications/)** in the product docs: **Kubernetes DNS**, **LoadBalancer**, **Taikun Ingress** (including Managed Apps and **CertManager**), and **Taikun Link**—plus environment setup and wrap-up.
+Welcome to the **QBR hands-on workshop** for **Cloudera Cloud Factory**.
+
+You will work through **environment access**, then the **Exposing applications** track in the same order as the product documentation: from **Kubernetes DNS** and **LoadBalancer**, through **Taikun Ingress** (including **Managed Apps** and **CertManager**), to **Taikun Link**. Each lab page links to the matching chapter on **[docs.taikun.cloud](https://docs.taikun.cloud/CloudWorks/Exposing_Applications/Exposing_Applications/)** for full detail. Finish with **Workshop wrap-up** for discussion prompts.
+
+---
+
+## Start here
 
 <div class="qbr-grid" markdown="1">
 
 <div class="qbr-card" markdown="1">
 
-## Workshop track
+### Environment & project
 
-Agenda, timing, and learning outcomes for the session.
+Sign in, open your **project**, and confirm the **cluster** used for demos.
 
-[Open agenda](workshop/agenda.md){ .md-button }
-
-</div>
-
-<div class="qbr-card" markdown="1">
-
-## Start the lab
-
-Prerequisites and the first hands-on steps.
-
-[Prerequisites](workshop/prerequisites.md){ .md-button }
+[Environment setup](labs/environment-setup.md){ .md-button }
 
 </div>
 
 <div class="qbr-card" markdown="1">
 
-## Product overview
+### Exposing applications
 
-Short narrative for QBR: what Cloud Factory is and why it matters.
-
-[Overview](workshop/overview.md){ .md-button }
-
-</div>
-
-<div class="qbr-card" markdown="1">
-
-## Exposing applications (labs)
-
-Same module path as the product doc: DNS through Taikun Link.
+Overview of modules **01–06** and quick links into each exercise.
 
 [Lab overview](labs/exposing-applications/index.md){ .md-button }
 
@@ -50,15 +36,17 @@ Same module path as the product doc: DNS through Taikun Link.
 
 <div class="qbr-card" markdown="1">
 
-## Deep documentation
+### Official documentation
 
-Full product documentation and glossary (external).
+Procedures, UI paths, and glossary on the Cloudera Cloud Factory docs site.
 
 [docs.taikun.cloud](https://docs.taikun.cloud/){ .md-button }
 
 </div>
 
 </div>
+
+**Module order:** 01 DNS → 02 LoadBalancer → 03 Ingress basics → 04 Managed Apps → 05 CertManager → 06 Taikun Link → [Wrap-up](labs/workshop-wrap-up.md).
 
 ---
 
@@ -85,10 +73,10 @@ Full product documentation and glossary (external).
     A platform for deploying and operating Kubernetes-centric workloads across public and private clouds from a unified control plane—so teams spend less time on undifferentiated plumbing and more on applications and data services.
 
 ??? question "What will I do in this workshop?"
-    You will complete **environment setup**, then six **Exposing applications** modules (**01** Kubernetes DNS through **06** Taikun Link) in the same order as [the official guide](https://docs.taikun.cloud/CloudWorks/Exposing_Applications/Exposing_Applications/)—with facilitator demos plus links to full procedures on docs.taikun.cloud.
+    **Environment setup**, then six **Exposing applications** modules in order, aligned with [this documentation hub](https://docs.taikun.cloud/CloudWorks/Exposing_Applications/Exposing_Applications/). Your facilitator demos in Cloud Factory; you use this site for structure and deep links.
 
 ??? question "Where is the full product documentation?"
-    Public documentation lives at **[docs.taikun.cloud](https://docs.taikun.cloud/)**. This workshop site is a **narrow QBR slice** with original lab steps; use Taikun docs for depth on features, cloud providers, and operations.
+    **[docs.taikun.cloud](https://docs.taikun.cloud/)** — use it for screenshots, edge cases, and topics outside this QBR lab slice.
 
-??? question "Who do I contact for workshop access issues?"
-    Use the channel your facilitator shared (Slack, email, or support ticket). Do not post credentials or internal URLs in public forums.
+??? question "Who do I contact for access issues?"
+    Use the channel your facilitator shared. Do not post credentials or internal URLs in public forums or GitHub issues.
