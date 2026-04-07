@@ -28,8 +28,6 @@ docs_dir: '../../content'
 site_dir: './build'
 extra_css:
   - assets/stylesheets/extra.css
-extra_javascript:
-  - assets/javascripts/username-replacer.js
 use_directory_urls: true
 
 nav:

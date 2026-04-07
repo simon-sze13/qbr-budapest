@@ -47,36 +47,3 @@ Procedures, UI paths, and glossary on the Cloudera Cloud Factory docs site.
 </div>
 
 **Module order:** 01 DNS → 02 LoadBalancer → 03 Ingress basics → 04 Managed Apps → 05 CertManager → 06 Taikun Link → [Wrap-up](labs/workshop-wrap-up.md).
-
----
-
-## Personalize examples (optional)
-
-!!! tip "Optional: personalize code samples"
-    Enter your assigned workshop username (for example `user001`) and click **UPDATE EXAMPLES** so snippets match your sandbox.
-
-    <div class="username-input-container">
-        <input type="text" id="user-username-input" placeholder="e.g., user001">
-        <button id="user-username-save">UPDATE EXAMPLES</button>
-        <button id="user-username-clear">RESET</button>
-    </div>
-
-    ```text title="Example placeholder"
-    changed_user=USERNAME;
-    ```
-
----
-
-## Frequently asked questions
-
-??? question "What is Cloudera Cloud Factory?"
-    A platform for deploying and operating Kubernetes-centric workloads across public and private clouds from a unified control plane—so teams spend less time on undifferentiated plumbing and more on applications and data services.
-
-??? question "What will I do in this workshop?"
-    **Environment setup**, then six **Exposing applications** modules in order, aligned with [this documentation hub](https://docs.taikun.cloud/CloudWorks/Exposing_Applications/Exposing_Applications/). Your facilitator demos in Cloud Factory; you use this site for structure and deep links.
-
-??? question "Where is the full product documentation?"
-    **[docs.taikun.cloud](https://docs.taikun.cloud/)** — use it for screenshots, edge cases, and topics outside this QBR lab slice.
-
-??? question "Who do I contact for access issues?"
-    Use the channel your facilitator shared. Do not post credentials or internal URLs in public forums or GitHub issues.

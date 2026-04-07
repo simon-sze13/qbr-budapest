@@ -96,32 +96,8 @@
   margin: 0.6em;
 }
 
-.username-input-container input {
-  padding: 5px 10px;
-  border: 1px solid #ccc;
-  border-radius: 3px;
-  flex-grow: 1;
-  background-color: white;
-  color: black;
-  font-size: large;
-}
-
-.username-input-container button {
-  padding: 6px 12px;
-  cursor: pointer;
-  background-color: var(--md-primary-fg-color--light);
-  color: white;
-  border: none;
-  border-radius: 3px;
-  font-weight: bold;
-  transition: background-color 0.2s;
-}
-
-.username-input-container button:hover {
-  background-color: var(--md-primary-fg-color);
-}
-
-.username-input-container button#user-username-clear {
-  background-color: #888;
-  font-size: 0.8em;
+.md-typeset .qbr-card h3 {
+  margin-top: 0;
+  font-size: 1.05rem;
+  color: var(--md-primary-fg-color);
 }
