@@ -45,5 +45,3 @@ Procedures, UI paths, and glossary on the Cloudera Cloud Factory docs site.
 </div>
 
 </div>
-
-**Module order:** 01 DNS → 02 LoadBalancer → 03 Ingress basics → 04 Managed Apps → 05 CertManager → 06 Taikun Link → [Wrap-up](labs/workshop-wrap-up.md).
