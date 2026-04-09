@@ -1,6 +1,6 @@
-# Instructor guide — QBR Cloudera Cloud Factory workshop
+# Instructor guide — CCF MCP workshop (MkDocs)
 
-This guide covers local builds and publishing the participant-facing MkDocs site. Workshop **content** lives under [`../content/`](../content/); **configuration** lives in [`mkdocs/mkdocs.yml`](mkdocs/mkdocs.yml).
+Local build and publish steps for the **Cloudera Cloud Factory MCP** workshop site. **Content** is under [`../content/`](../content/) (see [`../content/mcp/`](../content/mcp/)); **config** is [`mkdocs/mkdocs.yml`](mkdocs/mkdocs.yml).
 
 > [!TIP]
 > **Workshop or POC environments** are arranged through your Cloudera account team or facilitator. Follow your internal process for tenant access, approvals, and duration—this public guide only documents the MkDocs site.

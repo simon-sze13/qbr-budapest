@@ -1,5 +1,5 @@
-site_name: "QBR — Cloudera Cloud Factory Workshop"
-site_description: Hands-on workshop guide for the Cloudera Cloud Factory QBR demo.
+site_name: "CCF MCP Workshop"
+site_description: Workshop — Cloudera Cloud Factory custom MCP server, app-latest API, and Cursor stdio setup.
 site_author: Cloudera
 site_url: https://simon-sze13.github.io/qbr-budapest/
 copyright: Copyright &copy; 2026 Cloudera, Inc. All rights reserved.<br><a href="https://www.cloudera.com/legal/terms-and-conditions.html" target="_blank" rel="noopener">Terms &amp; Conditions</a> · <a href="https://www.cloudera.com/legal/policies.html" target="_blank" rel="noopener">Privacy Policy</a>
@@ -32,17 +32,16 @@ use_directory_urls: true
 
 nav:
     - Home: README.md
-    - Labs:
-        - Environment & project: labs/environment-setup.md
-        - Exposing applications:
-            - Overview: labs/exposing-applications/index.md
-            - "01 · Kubernetes DNS — basics": labs/exposing-applications/01-kubernetes-dns-basics.md
-            - "02 · LoadBalancer": labs/exposing-applications/02-loadbalancer.md
-            - "03 · Taikun Ingress — basics": labs/exposing-applications/03-taikun-ingress-basics.md
-            - "04 · Taikun Ingress — Managed Apps": labs/exposing-applications/04-taikun-ingress-managed-apps.md
-            - "05 · Taikun Ingress — CertManager": labs/exposing-applications/05-taikun-ingress-certmanager.md
-            - "06 · Taikun Link": labs/exposing-applications/06-taikun-link.md
-        - Workshop wrap-up: labs/workshop-wrap-up.md
+    - MCP workshop:
+        - Overview: mcp/index.md
+        - Prerequisites: mcp/prerequisites.md
+        - Install & build: mcp/install.md
+        - Configuration: mcp/configuration.md
+        - Cursor & stdio: mcp/cursor.md
+        - Tool reference: mcp/tools.md
+        - "Lab 1 — First connection": mcp/lab-01-connection.md
+        - "Lab 2 — Projects & catalogs": mcp/lab-02-projects-catalogs.md
+        - Resources: mcp/resources.md
 
 markdown_extensions:
   - admonition

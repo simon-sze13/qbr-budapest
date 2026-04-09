@@ -2,11 +2,11 @@
 hide:
   - toc
 ---
-# Cloudera Cloud Factory — QBR workshop
+# Cloudera Cloud Factory — MCP workshop
 
-Welcome to the **QBR hands-on workshop** for **Cloudera Cloud Factory**.
+This workshop walks you through the **custom Model Context Protocol (MCP) server** for **Cloudera Cloud Factory (CCF)**. You will build or install the binary, point it at the **app-latest** API (`api-latest.osc1.sjc.cloudera.com`), wire **Robot User** credentials, and connect **Cursor** (or another MCP client) over **stdio** so an AI assistant can call CCF tools safely.
 
-You will work through **environment access**, then the **Exposing applications** track in the same order as the product documentation: from **Kubernetes DNS** and **LoadBalancer**, through **Taikun Ingress** (including **Managed Apps** and **CertManager**), to **Taikun Link**. Each lab page links to the matching chapter on **[docs.taikun.cloud](https://docs.taikun.cloud/CloudWorks/Exposing_Applications/Exposing_Applications/)** for full detail. Finish with **Workshop wrap-up** for discussion prompts.
+**Reference repository (branch `app-latest`):** [github.com/skotnicky/cloudera-cloud-factory-mcp](https://github.com/skotnicky/cloudera-cloud-factory-mcp/tree/app-latest)
 
 ---
 
@@ -16,29 +16,49 @@ You will work through **environment access**, then the **Exposing applications**
 
 <div class="qbr-card" markdown="1">
 
-### Environment & project
+### MCP & CCF overview
 
-Sign in, open your **project**, and confirm the **cluster** used for demos.
+What MCP is, how this server talks to CCF, and **app-latest**.
 
-[Environment setup](labs/environment-setup.md){ .md-button }
-
-</div>
-
-<div class="qbr-card" markdown="1">
-
-### Exposing applications
-
-Overview of modules **01–06** and quick links into each exercise.
-
-[Lab overview](labs/exposing-applications/index.md){ .md-button }
+[MCP overview](mcp/index.md){ .md-button }
 
 </div>
 
 <div class="qbr-card" markdown="1">
 
-### Official documentation
+### Install & configure
 
-Procedures, UI paths, and glossary on the Cloudera Cloud Factory docs site.
+Clone **`app-latest`**, build with Go, set **`TAIKUN_*`** env vars.
+
+[Install](mcp/install.md){ .md-button } [Configure](mcp/configuration.md){ .md-button }
+
+</div>
+
+<div class="qbr-card" markdown="1">
+
+### Cursor connection
+
+`mcp.json` + wrapper script for **stdio** transport.
+
+[Cursor setup](mcp/cursor.md){ .md-button }
+
+</div>
+
+<div class="qbr-card" markdown="1">
+
+### Tools & labs
+
+Full tool list and guided exercises in the IDE.
+
+[Tool reference](mcp/tools.md){ .md-button } [Lab 1](mcp/lab-01-connection.md){ .md-button }
+
+</div>
+
+<div class="qbr-card" markdown="1">
+
+### Product docs
+
+UI concepts, APIs, and operations on **docs.taikun.cloud**.
 
 [docs.taikun.cloud](https://docs.taikun.cloud/){ .md-button }
 
