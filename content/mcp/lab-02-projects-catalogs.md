@@ -8,7 +8,7 @@ Use MCP tools to **navigate** CCF: projects, optional virtual clusters, and **ca
 
 1. **`list-projects`** — Capture a **project ID** you are allowed to use.
 2. Optionally **`list-virtual-clusters`** with the **parent project** your script specifies.
-3. **`catalog-list`** — List catalogs; pick a **catalog ID** for read-only inspection.
+3. **`catalog-list`** — List catalogs (tool name `catalog-list`); pick a **catalog ID** for read-only inspection.
 4. **`catalog-apps-list`** — List applications registered in that catalog.
 5. Optional (if allowed): **`available-apps-list`** with a small **limit** to see repository packages.
 
